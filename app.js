@@ -44,14 +44,14 @@ const quiz = [
         answer : 2
     },
     {
-        question : `What does the term "scope" refer to in programming?`,
+        question : `What is a recursive function?`,
         choices : [
-            "The physical location where a variable is stored in memory",
-            "The lifespan or visibility of a variable",
-            "The process of converting source code into machine code",
-            "The process of finding and fixing bugs in a program"
+            "A function that calls itself during its execution",
+            "A function that returns a random value",
+            "A function that uses a loop to iterate over a collection",
+            " A function that can only be executed once"
         ],
-        answer : 1
+        answer : 0
     }
 ]
 
