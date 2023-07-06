@@ -22,6 +22,7 @@ body{
     background-color: #1b2430;
 }
 
+
 .container{
 
     width : 60%;
@@ -50,8 +51,8 @@ span{
 
 .choices {
 
-    font-weight: bolder;
     padding : .3rem;
+    font-size: smaller;
 }
 
 label{
@@ -62,9 +63,11 @@ label{
 
     display: flex;
     justify-content: flex-end;
+    gap : 10px;
+
 }
 
-.actions button{
+.action{
 
     outline : none;
     border : none;
@@ -72,4 +75,16 @@ label{
     cursor: pointer;
     background-color: #1b2430;
     color : #d6d5a8;
+}
+
+.action:hover{
+    background-color: #141b23;
+}
+
+.action:active{
+    background-color: #1b2430;
+}
+
+.hide{
+    display: none;
 }

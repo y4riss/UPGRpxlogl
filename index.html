@@ -4,47 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="app.js" defer></script>
     <title>Quizz App</title>
   </head>
   <body class="flex-center">
+
       <div class="container">
 
-        <div class="quizz-body">
-            <div class="question-div">
-              <p class="question" >
+        <div class="start">
+          <p>This is a quiz about common knowledge in programming, Good luck !</p>
 
-<span>Question 1:</span>Which programming language is often used for developing Android applications?</p>
+          <div class="actions">
+            <button class="action">Start</button>
+          </div>
+        </div>
+
+        <div class="quiz-body hide">
+            <div class="question-div">
+              <span></span>
+              <p class="question" ></p>
             </div>
 
             <div class="choices">
               <div class="choice">
+                <input type="radio" name="radio" id="0">
+                <label for="0"></label>
+              </div>
+
+              <div class="choice">
                 <input type="radio" name="radio" id="1">
-                <label for="1">Java</label>
+                <label for="1"></label>
               </div>
 
               <div class="choice">
                 <input type="radio" name="radio" id="2">
-                <label for="2">Python</label>
+                <label for="2"></label>
               </div>
 
               <div class="choice">
                 <input type="radio" name="radio" id="3">
-                <label for="3">C++</label>
-              </div>
-
-              <div class="choice">
-                <input type="radio" name="radio" id="4">
-                <label for="4">Ruby</label>
+                <label for="3"></label>
               </div>
             </div>
 
             <div class="actions">
-              <button class="action">Next</button>
+              <button class="ok action">Ok</button>
             </div>
         </div>
 
-
+        <div class="finish hide">
+            <p class="score"></p>
+            <div class="actions">
+              <button class="restart action">Restart</button>
+            </div>
+        </div>
       </div>
   </body>
 </html>
